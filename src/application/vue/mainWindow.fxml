@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="idAnchorPane" prefHeight="540.0" prefWidth="760.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.mainController">
+   <children>
+      <Button fx:id="idStart" layoutX="245.0" layoutY="384.0" mnemonicParsing="false" onAction="#startGame" prefHeight="63.0" prefWidth="267.0" style="-fx-background-color: #87CEEB; -fx-background-radius: 6,5;" text="Start">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+          <graphic>
+             <ImageView fx:id="startIcon" fitHeight="23.0" fitWidth="35.0" layoutX="231.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                   <Image url="@../../resources/images/play.png" />
+                </image></ImageView>
+          </graphic>
+      </Button>
+      <ImageView fitHeight="213.0" fitWidth="596.0" layoutX="104.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/logo.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-5.0" layoutY="2.0" prefHeight="34.0" prefWidth="765.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="IA">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#settings" text="Settings" />
+                  <MenuItem mnemonicParsing="false" onAction="#models" text="Models" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text=" Contact us on Partage!" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

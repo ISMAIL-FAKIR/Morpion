@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="idAnchorPane" prefHeight="540.0" prefWidth="760.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.mainController">
+   <children>
+      <Button fx:id="idStart" layoutX="260.0" layoutY="287.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="227.0" text="Start">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+          <graphic>
+             <ImageView fx:id="startIcon" fitHeight="23.0" fitWidth="35.0" layoutX="231.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                   <Image url="@../../../resources/images/play.jpeg" />
+                </image></ImageView>
+          </graphic>
+      </Button>
+      <Button fx:id="models" layoutX="260.0" layoutY="349.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="227.0" text="Models">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+       <graphic>
+          <ImageView fx:id="modelsIcon" fitHeight="23.0" fitWidth="35.0" layoutX="231.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../../resources/images/modelPic.png" />
+             </image></ImageView>
+       </graphic>
+      </Button>
+      <Button fx:id="idSettings" layoutX="260.0" layoutY="412.0" mnemonicParsing="false" onAction="#settings" prefHeight="42.0" prefWidth="227.0" text="Settings">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+       <graphic>
+          <ImageView fx:id="settingsIcon" fitHeight="23.0" fitWidth="35.0" layoutX="231.0"  layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../../resources/images/settings.png" />
+             </image></ImageView>
+       </graphic>
+      </Button>
+      <ImageView fitHeight="213.0" fitWidth="596.0" layoutX="82.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="747.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GameModeController">
+   <children>
+      <Button fx:id="idSingleplayer" layoutX="98.0" layoutY="373.0" mnemonicParsing="false" onAction="#SinglePlayerAction" prefHeight="44.0" prefWidth="193.0" style="-fx-background-color: #87CEEB;  -fx-background-radius: 6,5;" text="Singleplayer">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+          <graphic>
+              <ImageView fx:id="user" fitHeight="23.0" fitWidth="35.0" layoutX="231.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../resources/images/person.png" />
+                  </image></ImageView>
+          </graphic>
+      </Button>
+      <Button fx:id="idMultiplayer" layoutX="441.0" layoutY="373.0" mnemonicParsing="false" onAction="#MultiplayerAction" prefHeight="44.0" prefWidth="193.0" style="-fx-background-color: #87CEEB;" text="Multiplayer">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+          <graphic>
+              <ImageView fx:id="users" fitHeight="23.0" fitWidth="35.0" layoutX="231.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../resources/images/2users.png" />
+                  </image></ImageView>
+          </graphic>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </Button>
+       <Pane fx:id="idTitlePane" layoutX="92.0" layoutY="36.0" prefHeight="171.0" prefWidth="551.0">
+           <children>
+               <ImageView fitHeight="187.0" fitWidth="495.0" layoutX="51.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/logo.png" />
+         </image>
+      </ImageView>
+           </children>
+       </Pane>
+         <Button fx:id="idBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: #0886cf; -fx-background-radius: 6, 5; -fx-background-insets: 0, 1; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 ); -fx-text-fill: #F2F2F2;" text="Back">
+             <graphic>
+                 <ImageView fx:id="backIcon" fitHeight="23.0" fitWidth="18.0" layoutX="18.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@../../resources/images/left-arrow.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+             <font>
+                 <Font size="12.0" />
+             </font>
+         </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.settingController">
+    <children>
+        <Pane layoutX="-1.0" prefHeight="542.0" prefWidth="783.0">
+            <children>
+            <Pane layoutX="195.0" layoutY="114.0" prefHeight="314.0" prefWidth="394.0">
+               <children>
+                   <TextField fx:id="FL" layoutX="66.0" layoutY="67.0" prefHeight="25.0" prefWidth="75.0" />
+                   <TextField fx:id="FH" layoutX="297.0" layoutY="122.0" prefHeight="25.0" prefWidth="75.0" />
+                   <TextField fx:id="FLr" layoutX="182.0" layoutY="122.0" prefHeight="25.0" prefWidth="75.0" />
+                   <TextField fx:id="ML" layoutX="66.0" layoutY="122.0" prefHeight="25.0" prefWidth="75.0" />
+                   <TextField fx:id="MH" layoutX="297.0" layoutY="67.0" prefHeight="24.0" prefWidth="75.0" />
+                   <TextField fx:id="MLr" layoutX="182.0" layoutY="177.0" prefHeight="25.0" prefWidth="75.0" />
+                   <TextField fx:id="DL" layoutX="66.0" layoutY="177.0" prefHeight="25.0" prefWidth="75.0" />
+                   <TextField fx:id="DH" layoutX="297.0" layoutY="177.0" prefHeight="25.0" prefWidth="75.0" />
+                   <TextField fx:id="DLr" layoutX="186.0" layoutY="67.0" prefHeight="25.0" prefWidth="75.0" />
+                   <Label layoutX="23.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" text="F" />
+                      <Label layoutX="23.0" layoutY="126.0" prefHeight="14.0" prefWidth="31.0" text="M" />
+                      <Label layoutX="23.0" layoutY="181.0" prefHeight="14.0" prefWidth="31.0" text="D" />
+                  <Label layoutX="90.0" layoutY="36.0" text="L" />
+                      <Button fx:id="buttonValider" cancelButton="true" layoutX="140.0" layoutY="259.0" mnemonicParsing="false" onAction="#modifier" prefHeight="33.0" prefWidth="115.0" text="Valider" textAlignment="CENTER" textFill="#009124">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+                  <Label layoutX="335.0" layoutY="36.0" text="H" />
+                  <Label layoutX="213.0" layoutY="36.0" text="LR" />
+               </children>
+            </Pane>
+            <Label contentDisplay="BOTTOM" layoutX="310.0" layoutY="97.0" opacity="0.29" text="Régler la configuration du jeu !" textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
